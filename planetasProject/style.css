@@ -46,7 +46,12 @@ time, mark, audio, video {
 	font-weight: 400;
 	
   }
-
+  p {
+	word-spacing: 0.2rem;
+	letter-spacing: 0.05rem;
+	box-sizing: border-box;
+	padding: 3rem;
+  }
   nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -114,27 +119,28 @@ time, mark, audio, video {
 	  display: flex;
 	}
   }
-
+body > div> .btnPlanet{
+	padding: 1.25rem; 
+/*  VER POR QUE NO ME DEJA SELECCIONAR ESTA CLASE */
+	
+}
 
 .btnPlanet{
-	display:flex;
-	flex-wrap: wrap;
-	padding: 0;
-	margin: 0;
+	
+	padding: 0rem;
+	margin: 1.25rem;
 	background: black;
+	
+
 	
   }
   .btnPlanet > img{
 	max-width: 20rem;
 	
+	
   }
 
-p {
-	word-spacing: 0.2rem;
-	letter-spacing: 0.05rem;
-	box-sizing: border-box;
-	padding: 3rem;
-  }
+
 
 #app{
 	display:flex;
@@ -169,7 +175,7 @@ float:left;
 	font-size: 0.65rem;
 	display:flex;
 	justify-content: center;
-	align-content: flex-end;
+
 
 }
 

@@ -1,9 +1,5 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
+  @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
+  html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -22,31 +18,12 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
+	text-decoration: none;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+  
 
+  @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
 /* PALETTE */
 :root {
 	--background: #000000;
@@ -55,37 +32,90 @@ table {
   }
 
   /* GLOBAL STYLES */
-body {
-	font-family: "Lato", sans-serif;
+
+
+  body {
+	
 	background-color: var(--background);
 	color: var(--primary);
+	font-family: 'Gemunu Libre', sans-serif;
+	
   }
-  
-  h1,
+nav >h1 {
+	font-size:xx-large;
+	text-align: center;
+	padding: 18px 0px;
+	text-transform:uppercase;
+}
+
+
+  #btnPlanet{
+	
+	padding: 0;
+	border-color: black;
+  }
+
+  #btnSmall, #btnBig {
+width: 100vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+  font-family:'Gemunu Libre', sans-serif;
+}
+#btnSmall, #btnBig:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+/*   body > h1,
   h2,
   h3 {
 	color: var(--secondary);
 	font-weight: normal;
 	align-content: center;
 	justify-content: center;
-  }
+  } */
 
   /* NAVIGATOR */
-nav {
-	height: 20vh;
+/* nav {
 	display: flex;
+	justify-content: center;
+	height:10vh;
+	font-family: 'Gemunu Libre', sans-serif;
+	 */
+
+	/* height: 20vh;
+	width:100vh;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 10rem;
 	flex-wrap: wrap;
 	background-image: url("./public/images/navbar.jpg");
 	background-size: cover;
-	background-position: center center;
-  }
+	background-position: center center; */
+  /* }
 
   nav > .btn {
 	background-color: var(--secondary);
 	height: 2rem;
+	display: flex;
+	font-family: 'Gemunu Libre', sans-serif
+;
 
   }
-  
+   */

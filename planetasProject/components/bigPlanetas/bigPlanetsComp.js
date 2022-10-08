@@ -31,7 +31,6 @@ const transformData = (data) => {
 const printBig = async (arrayMappeado) => {
     try {
         divPrincipal.innerHTML = "";
-        //   console.log(arrayMappeado);
           arrayMappeado.forEach((element) => {
             divPrincipal.innerHTML += `
                 <div>

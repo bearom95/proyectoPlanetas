@@ -2,6 +2,7 @@ import './style.css'
 import {initHeader} from "./components/header/headerComp";
 import { initSmall } from './components/smallPlanets/smallPlanetsComp';
 import { initBig } from './components/bigPlanetas/bigPlanetsComp';
+import { callPlanetCard } from './components/planetCardComp/planetCardComp';
 
 
 
@@ -19,5 +20,8 @@ smallbtn.addEventListener("click", initSmall);
 
 const bigbtn = document.querySelector("#btnBig")
 bigbtn.addEventListener("click", initBig);
+
+const planetbtn = document.querySelector("#btnPlanet")
+planetbtn.addEventListener("click", callPlanetCard(planeta) )
 
 

@@ -46,3 +46,46 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* PALETTE */
+:root {
+	--background: #000000;
+	--primary: #f3f6f9;
+	--secondary: #ebac67;
+  }
+
+  /* GLOBAL STYLES */
+body {
+	font-family: "Lato", sans-serif;
+	background-color: var(--background);
+	color: var(--primary);
+  }
+  
+  h1,
+  h2,
+  h3 {
+	color: var(--secondary);
+	font-weight: normal;
+	align-content: center;
+	justify-content: center;
+  }
+
+  /* NAVIGATOR */
+nav {
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+	flex-wrap: wrap;
+	background-image: url("./public/images/navbar.jpg");
+	background-size: cover;
+	background-position: center center;
+  }
+
+  nav > .btn {
+	background-color: var(--secondary);
+	height: 2rem;
+
+  }
+  

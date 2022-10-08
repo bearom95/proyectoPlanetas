@@ -1,6 +1,6 @@
 const divPrincipal = document.body.querySelector("#app");
 export const initSmall = () => {
-  getSmall();
+  getSmall(); 
 };
 
 const getSmall = async () => {
@@ -28,10 +28,8 @@ const transformData = (data) => {
   printSmall(dataToPrint);
 };
 
-const printSmall = async (arrayMappeado) => {
-    try {
+const printSmall = (arrayMappeado) => {
         divPrincipal.innerHTML = "";
-        //   console.log(arrayMappeado);
           arrayMappeado.forEach((element) => {
             divPrincipal.innerHTML += `
                 <div>
@@ -43,7 +41,4 @@ const printSmall = async (arrayMappeado) => {
                 </div>
                 `;
           });
-    } catch (eror) {
-        console.log(error)
-    }
 };

@@ -1,33 +1,23 @@
 import './style.css'
-/* import { initSmall } from './components/smallPlanets/smallPlanetsComp'; */
 import {initHeader} from "./components/header/headerComp";
-/* initSmall() */
-initHeader()
+import { initSmall } from './components/smallPlanets/smallPlanetsComp';
+import { initBig } from './components/bigPlanetas/bigPlanetsComp';
 
 
-//document.querySelector('#app').innerHTML = ``
 
-//componente Games.js de antonio
-/* import { getData } from "../../services/services";     
-import { GameCard } from "../../components/GameCard/GameCard";
+//Creamos una constante cabecera, que se refiere al header del HTML, y hacemos que su innerHTML sea el initHeader.
+//(Podríamos quitar esta linea de abajo y a cabecera.innerHTML igualarlo directamente a initHeader). 
+//La funcion initHeader la tenemos definida en el headerComp.js y lo que hace es que ... no entiendo bien lo 
+//que hace esa funcion, pero sí veo que añade en un template los botones
 
-const getGames = async () => {
-  const games = await getData("games");
-  printGames(games);
-};
+const cabecera = document.querySelector("header");
+cabecera.innerHTML = initHeader();   
 
-const printGames = (games) => {
-  const container = document.createElement("div");
-  container.classList.add("games-container");
-  for (const game of games) {
-    container.innerHTML += GameCard(game);
-  }
+//Los eventos de los botones tienen que estar en el main (, al no estar creado en el index, no s epuede crear el evento a la vez)
+const smallbtn = document.querySelector("#btnSmall")
+smallbtn.addEventListener("click", initSmall);
 
-  const mainContainer = document.querySelector("#app");
-  mainContainer.innerHTML = "";
-  mainContainer.appendChild(container);
-};
+const bigbtn = document.querySelector("#btnBig")
+bigbtn.addEventListener("click", initBig);
 
-export const Games = () => {
-  getGames();
-}; */
+

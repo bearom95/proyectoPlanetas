@@ -41,7 +41,7 @@ const printSmall = (arrayMappeado) => { //evento es el parametro de la funcion, 
             divPrincipal.innerHTML += `
                 <div>
                   <button class="btnPlanet" type="button">
-                  <img class="${element.name}" src=${element.image} width="130px" height="130px"></button>
+                  <img class="${element.name}" src=${element.image}></button>
                 </div>
                 `;
           });

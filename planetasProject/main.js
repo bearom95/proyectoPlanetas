@@ -15,13 +15,13 @@ const cabecera = document.querySelector("header");
 cabecera.innerHTML = initHeader();   
 
 //Los eventos de los botones tienen que estar en el main (, al no estar creado en el index, no s epuede crear el evento a la vez)
-const smallbtn = document.querySelector("#btnSmall")
+const smallbtn = document.querySelector("#btnSmall");
 smallbtn.addEventListener("click", initSmall);
 
-const bigbtn = document.querySelector("#btnBig")
+const bigbtn = document.querySelector("#btnBig");
 bigbtn.addEventListener("click", initBig);
 
-const planetbtn = document.querySelector("#btnPlanet")
-planetbtn.addEventListener("click", callPlanetCard(planeta) )
+const planetbtn = document.querySelector("#btnPlanet");
+planetbtn.addEventListener("click", callPlanetCard());
 
 

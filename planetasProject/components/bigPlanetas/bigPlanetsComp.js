@@ -1,3 +1,6 @@
+import {callPlanetCard} from '../planetCardComp/planetCardComp';
+
+
 const divPrincipal = document.body.querySelector("#app");
 export const initBig = () => {
   getBig(); 
@@ -28,21 +31,19 @@ const transformData = (data) => {
   printBig(dataToPrint);
 };
 
-const printBig = async (arrayMappeado) => {
-    try {
+const printBig = (arrayMappeado) => {
+  document.addEventListener("click", (evento) => {
+    const planet = arrayMappeado.find(element => element.name === evento.path[0].className)
+    callPlanetCard(planet)
+  })
+
         divPrincipal.innerHTML = "";
           arrayMappeado.forEach((element) => {
             divPrincipal.innerHTML += `
                 <div>
-                  <h2>${element.name}</h2>
-                  <h3>${element.diameter}</h3>
-                  <h3>${element.lengthDay}</h3>
-                  <h3>${element.temperature}</h3>
-                  <img src=${element.image} width="130px" height="130px">
+                  <button class="btnPlanet" type="button">
+                  <img class="${element.name}" src=${element.image}></button>
                 </div>
                 `;
           });
-    } catch (error) {
-        console.log(error)
-    }
-};
+    };

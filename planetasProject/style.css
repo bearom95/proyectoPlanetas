@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
 
   html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -26,7 +25,7 @@ time, mark, audio, video {
 	text-decoration: none;
 }
 
-  @import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@600&display=swap');
+
 
 /* PALETTE */
 :root {
@@ -36,22 +35,33 @@ time, mark, audio, video {
   }
 
   /* GLOBAL STYLES */
-
-
   body {
-	
 	background-color: var(--background);
 	color: var(--primary);
 	font-family: 'Orbitron', sans-serif;
 	font-weight: 400;
-	
+	height: 100%;
   }
+
+  #app {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;	 
+  }
+
   p {
 	word-spacing: 0.2rem;
 	letter-spacing: 0.05rem;
 	box-sizing: border-box;
 	padding: 3rem;
-  }
+	text-align:  justify;
+	text-justify: inter-word;
+	min-width: 18rem;
+	align-items: center;
+	flex-grow: 1;	
+   }
+
+
   nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -66,16 +76,17 @@ time, mark, audio, video {
 	padding: 12px 0px;
 	text-transform: uppercase;
 	font-weight: 800;
-	
-	
+	cursor: pointer;
 }
+
   nav > div {
 	display: flex;
 	flex-wrap: wrap;
-	height: 130px;
+	max-height: 130px; 
 	justify-content: center;
 	padding: 0.5rem;
 	gap: 1rem;
+	z-index: 1;
   }
 
   #btnSmall, #btnBig {
@@ -93,13 +104,14 @@ time, mark, audio, video {
   background-color: transparent;
   border: .1875rem solid #00d7c3;
   border-radius: 3.125rem;
-  -webkit-transition: all .15s ease-in-out;
+  /* -webkit-transition: all .15s ease-in-out; */
   transition: all 0.15s ease-in-out;
   color: #00d7c3;
   font-family: 'Orbitron', sans-serif;
-  
-
+  max-height: 3rem;
+  min-width: 40vw;
 }
+
 #btnSmall:hover {
   box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
   border: 3px solid #00d7c3;
@@ -110,7 +122,8 @@ time, mark, audio, video {
 	border: 3px solid #00d7c3;
   }
 
-  @media screen and (max-width: 600px) {
+
+  /*  @media screen and (max-width: 600px) {
 	nav > div {
 	  gap: 1rem;
 	  flex-direction: column;
@@ -118,121 +131,63 @@ time, mark, audio, video {
 	  justify-content: space-around;
 	  display: flex;
 	}
+  }  */
+
+  .divBtnPlanet {
+	display: flex;
+	align-items: center;
+	align-content: center;
+	padding-top: 2rem;
   }
 
-
-.btnPlanet{
-	padding: 1.25rem;
-	padding: 0rem;
-	margin: 1.25rem;
-	background: black;
-	
-
-	
+  .btnPlanet {
+	margin: 0.1rem;
+	background:black;
   }
+
   .btnPlanet > img{
 	max-width: 20rem;
-	
-	
+	cursor: pointer;
   }
 
 
-
-#app{
-	display:flex;
-	flex-wrap: wrap;
-	padding:0;
-	margin-left: 0;
-	justify-content: center;
-
-		
-}
-  .mainImage{
-	overflow-x: hidden;
+  .mainImage {
+	overflow-x: hidden; 
 	padding-left: 0px;
 	flex-grow: 1;
 	height:auto;
 	width:\9 ;
-	float:left;
- 	
-}
+   }
 
-  body > div > p {
-	text-align:  justify;
-	text-justify: inter-word;
-	min-width: 18rem;
-	align-items: center;
-	float: right;
-	flex-grow: 1;	
-}
 
-.planetCardDiv {
+ .planetCardDiv {
 	box-sizing: border-box;
-	border-color: red;
-	padding-bottom: 18rem;
+	padding-bottom: 10rem; 
+	padding-top: 3rem;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-
-}
+	align-content: center;
+ }
 
 .planetCardDiv > img {
 	height: 25rem;
 	width:\9 ;
 	padding-top: 2rem;
 }
-		
- footer{
+	
+.planetCardDiv>h2 {
+	font-weight: 800;
+	font-size: xx-large;
+	margin-bottom: 1rem;
+}
+
+ footer {
 	display:block;
 	font-size: 0.65rem;
 	display: flex;
 	justify-content: center;
-	/* position: relative;
-	bottom: 0%;
-	width:0%;
-	text-align: center;
- */
-
 }
 
-/*   body > h1,
-  h2,
-  h3 {
-	color: var(--secondary);
-	font-weight: normal;
-	align-content: center;
-	justify-content: center;
-  } */
-
-  /* NAVIGATOR */
-/* nav {
-	display: flex;
-	justify-content: center;
-	height:10vh;
-	font-family: 'Gemunu Libre', sans-serif;
-	 */
-
-	/* height: 20vh;
-	width:100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 10rem;
-	flex-wrap: wrap;
-	background-image: url("./public/images/navbar.jpg");
-	background-size: cover;
-	background-position: center center; */
-  /* }
-
-  nav > .btn {
-	background-color: var(--secondary);
-	height: 2rem;
-	display: flex;
-	font-family: 'Gemunu Libre', sans-serif
-;
-
-  }
-   */

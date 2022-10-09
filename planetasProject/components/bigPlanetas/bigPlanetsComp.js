@@ -40,7 +40,7 @@ const printBig = (arrayMappeado) => {
         divPrincipal.innerHTML = "";
           arrayMappeado.forEach((element) => {
             divPrincipal.innerHTML += `
-                <div>
+                <div class="divBtnPlanet">
                   <button class="btnPlanet" type="button">
                   <img class="${element.name}" src=${element.image}></button>
                 </div>

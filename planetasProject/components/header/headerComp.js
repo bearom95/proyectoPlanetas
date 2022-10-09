@@ -4,7 +4,7 @@
 export const initHeader = ()=> {
 const navbar =   `
 <nav>
-    <h1>Planets</h1>
+    <h1 class="home">Planets</h1>
         <div>
             <button class="btn" id="btnSmall">Small Planets</button>
             <button class="btn" id="btnBig">Big Planets</button>

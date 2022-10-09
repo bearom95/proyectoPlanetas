@@ -57,7 +57,7 @@
       "lengthDay": "Length of day: 10.7 hours",
       "orbitalPeriod": "Orbital period: 10.747 days",
       "temperature": "Temperature: -140 C degrees",
-      "image": "https://www.mundoprimaria.com/wp-content/uploads/2020/03/Saturno.jpg"
+      "image": "./public/pictures/Saturno.jpg"
     },
     {
       "id": 8,

@@ -142,29 +142,46 @@ time, mark, audio, video {
 	display:flex;
 	flex-wrap: wrap;
 	padding:0;
-margin-left: 0;
-justify-content: center;
+	margin-left: 0;
+	justify-content: center;
 
 		
 }
   .mainImage{
 	overflow-x: hidden;
 	padding-left: 0px;
-flex-grow: 1;
-height:auto;
-width:\9 ;
-float:left;
+	flex-grow: 1;
+	height:auto;
+	width:\9 ;
+	float:left;
  	
 }
 
-  body > div > p{
+  body > div > p {
 	text-align:  justify;
 	text-justify: inter-word;
 	min-width: 18rem;
 	align-items: center;
 	float: right;
-	flex-grow: 1;
-		
+	flex-grow: 1;	
+}
+
+.planetCardDiv {
+	box-sizing: border-box;
+	border-color: red;
+	padding-bottom: 18rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.planetCardDiv > img {
+	height: 25rem;
+	width:\9 ;
+	padding-top: 2rem;
 }
 		
  footer{

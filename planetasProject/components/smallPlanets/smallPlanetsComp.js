@@ -43,4 +43,15 @@ const printSmall = (arrayMappeado) => { //evento es el parametro de la funcion, 
                   <button class="btnPlanet" type="button"><img class="${element.name}" src=${element.image}></button>
                 </div> `;
           });
+/// cambios del Reload hacia abajo
+          const reload = () => {
+            const btn = document.createElement("button");
+            btn.innerText = "Home";
+            divPrincipal.insertAdjacentElement("afterend", btn);
+            btn.addEventListener("click", () => window.location.reload());
+          };
+          reload();
 };
+
+
+

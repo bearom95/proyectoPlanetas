@@ -21,7 +21,7 @@ smallbtn.addEventListener("click", initSmall);
 const bigbtn = document.querySelector("#btnBig");
 bigbtn.addEventListener("click", initBig);
 
-const planetbtn = document.querySelector("#btnPlanet");
-planetbtn.addEventListener("click", callPlanetCard());
+/* const planetbtn = document.querySelector("#btnPlanet");
+planetbtn.addEventListener("click", callPlanetCard()); */
 
 

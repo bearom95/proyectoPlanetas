@@ -119,14 +119,10 @@ time, mark, audio, video {
 	  display: flex;
 	}
   }
-body > div> .btnPlanet{
-	padding: 1.25rem; 
-/*  VER POR QUE NO ME DEJA SELECCIONAR ESTA CLASE */
-	
-}
+
 
 .btnPlanet{
-	
+	padding: 1.25rem;
 	padding: 0rem;
 	margin: 1.25rem;
 	background: black;
@@ -146,13 +142,14 @@ body > div> .btnPlanet{
 	display:flex;
 	flex-wrap: wrap;
 	padding:0;
-margin: 0;
+margin-left: 0;
+justify-content: center;
 
 		
 }
   .mainImage{
 	overflow-x: hidden;
-	padding-left: 0px;;
+	padding-left: 0px;
 flex-grow: 1;
 height:auto;
 width:\9 ;
@@ -173,9 +170,13 @@ float:left;
  footer{
 	display:block;
 	font-size: 0.65rem;
-	display:flex;
+	display: flex;
 	justify-content: center;
-
+	/* position: relative;
+	bottom: 0%;
+	width:0%;
+	text-align: center;
+ */
 
 }
 

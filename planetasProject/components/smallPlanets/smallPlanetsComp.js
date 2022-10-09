@@ -40,9 +40,14 @@ const printSmall = (arrayMappeado) => { //evento es el parametro de la funcion, 
           arrayMappeado.forEach((element) => {
             divPrincipal.innerHTML += `
                 <div>
-                  <button class="btnPlanet" type="button">
-                  <img class="${element.name}" src=${element.image}></button>
-                </div>
-                `;
+                  <button class="btnPlanet" type="button"><img class="${element.name}" src=${element.image}></button>
+                  <div id="myModal" o class ="modal">
+	
+                  <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Some text in the Modal..</p>
+                   </div>
+                
+                      `;
           });
 };
